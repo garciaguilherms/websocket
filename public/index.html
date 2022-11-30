@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles/index.css">
+    <title>JetChat</title>
+</head>
+<body>
+    <div id="nick-wrap">
+		<h2>Bem vindo ao Jet-Chat</h2>
+		<p id="nick-error"></p>
+		<form id="set-nick" action="/chat.html">
+			<div class="input-box">
+			<label for="nickname">Usuário</label>
+			<input id="nickname" name="nickname" placeholder=" Digite seu nome de usuário" required pattern="\S(.*\S)?" autocomplete="off">
+			<label for="room">Sala</label>
+            <input id="room" name="room" placeholder=" Digite a sala que deseja entrar" required pattern="\S(.*\S)?" autocomplete="off"> 
+			<button type="submit">Entrar</button>
+		</form>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="/styles/chat.css">
+	<title>JetChat</title>
+</head>
+
+<body>
+	<div id="main">
+		<h1>Jet-Chat</h1>
+		<div id="info"></div>
+		<div id="chat-wrap">
+			<div id="chat"></div>
+		</div>
+
+		<div id="input-box">
+			<form id="send-message">
+				<input type="text" id="message" placeholder="Digite sua mensagem" autocomplete="off" required></input>
+				<button type="button" id="emoji-btn" onclick="emojiButton()"><i
+						class="fa-regular fa-face-smile"></i></button>
+				<input type="submit" value="Enviar">
+				<input type="button" id="leave-btn" value="Sair" onclick="leaveRoom()">
+			</form>
+		</div>
+	</div>
+	<div id="users-wrap">
+		<h3>Usuários conectados</h3>
+		<div id="users"></div>
+	</div>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
+	<script src="https://kit.fontawesome.com/82774a0e2f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
